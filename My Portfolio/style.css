@@ -20,16 +20,41 @@
   }
 
   body{
-  background-image: url('bg1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+    height: 100%;
+    margin:0;
+    padding: 0;
+    ;
+    background-image: url('bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  h1,h2{
+  h1{
       color:white;
-      margin-top: 200px;
+      margin-top: 300px;
       margin-left:auto;
       margin-right:auto;
-      font-weight: 300;
-      text-align: center
+      font-weight: 500;
+      font-size: 50px;
+      text-align: center;
+  }
+  h2{ 
+    color:white;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  p{
+    color: white;
+    font-size: 20px;
+  }
+  .contact{
+
+    color:white;
+    text-align: center;
+    position: relative;
+    
+  }
+  .footer{
+    text-align:center; 
   }
