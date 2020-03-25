@@ -44,9 +44,14 @@
     text-align: center;
   }
   
+  h3{
+    color:white
+  }
+  
   p{
     color: white;
     font-size: 20px;
+    text-align: center;
   }
   .contact{
 
@@ -58,3 +63,6 @@
   .footer{
     text-align:center; 
   }
+
+ 
+  
