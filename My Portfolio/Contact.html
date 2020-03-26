@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact page</title>
 </head>
+<!--page links-->
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="contact.js"></script>
 
-
+<!--navigation-->
 <div class="navbar">
     <div><a href="Contact.html">Contact</a></div>
     <div><a href="Portfolio.html">Portfolio</a></div>
@@ -18,13 +20,12 @@
 <body>
 
 <!-- contact Form-->
-<div class="contact">
-
 <div class="container">
-<form id="Contact">
+    <div class="alert">Message Sent!</div>
+<form  id="Contact" method="POST">
     <p>
-        <label for="name">Name :</label>
-            <input type="text" name="name" id="name" required=""/><br><br>
+        <label for="name">Full Name :</label>
+            <input type="text" name="fullname" id="fullname" required=""/><br><br>
     </p>
 
     <p>
@@ -37,7 +38,7 @@
             <input type="text" name="phone" id="phone">
     </p>
 
-    <p class="full">
+    <p>
         <label for="message">Message :</label><br>
             <textarea name="message" id="message" rows="6" required=""></textarea><br><br>
     </p>
