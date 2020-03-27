@@ -23,7 +23,6 @@
     height: 100%;
     margin:0;
     padding: 0;
-    ;
     background-image: url('bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,22 +46,24 @@
   h3{
     color:white
   }
-  
+
   p{
     color: white;
-    font-size: 20px;
     text-align: center;
   }
-  .container{
-    color:white;
-    text-align: center;
-    position: relative;
+  
+  .Container{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  
     
   }
+  
   .footer{
     text-align:center; 
   }
 
 
  
-  

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <!--page links-->
 <link rel="stylesheet" type="text/css" href="style.css">
-<script src="contact.js"></script>
 
 <!--navigation-->
 <div class="navbar">
@@ -20,9 +20,9 @@
 <body>
 
 <!-- contact Form-->
-<div class="container">
-    <div class="alert">Message Sent!</div>
-<form  id="Contact" method="POST">
+<div class="Container">
+    
+<form  id="contact" >
     <p>
         <label for="name">Full Name :</label>
             <input type="text" name="fullname" id="fullname" required=""/><br><br>
@@ -42,10 +42,16 @@
         <label for="message">Message :</label><br>
             <textarea name="message" id="message" rows="6" required=""></textarea><br><br>
     </p>
+
+    <div class="g-recaptcha" data-sitekey="6LdjceQUAAAAAFNHBx3rjj0wWuvvdz5rYqPtzalj"> </div>
     <p>
         <button type="submit">Submit</button>
     </p>
- </div>
+
+</form>
+</div>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="contact.js"></script>
 </body>
 
 <!--footer-->
