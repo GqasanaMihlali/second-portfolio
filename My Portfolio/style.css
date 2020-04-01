@@ -1,11 +1,11 @@
 
 
-.navbar {
+.navigation {
     overflow: auto;
     background-color:rgb(61, 61, 61);
   }
   
-.navbar a {
+.navigation a {
     float: right;
     color:lightblue;
     text-align: right;
@@ -14,7 +14,7 @@
     font-size: 17px;
   }
   
-.navbar a:hover {
+.navigation a:hover {
     background-color:grey;
     color: black;
   }
@@ -62,7 +62,8 @@
   }
   
   .footer{
-    text-align:center; 
+    text-align:center;
+
   }
 
 
