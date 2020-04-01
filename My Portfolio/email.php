@@ -1,12 +1,20 @@
-<?php 
-function sanitize_my_email($field) {$field = filter_var($field,FILTER_SANITIZE_EMAIL);
-if(filter_var($field, FILTER_VALIDATE_EMAIL)){
-    return true;}
-    else {return false;}
+<?php
+if(isset($_POST['submit'])){
+    $name=$_POST['fullname'];
+    $email=$_POST['email'];
+    $phone=$_POST['phone'];
+    $message=$_POST['message'];
+    
+    $to='mihlaligqasana@gmail.com';
+    $subject='Submission';
+    $message="Name:".$name."\n"."phone:".$phone."\n". "Wrote the following:"."\n\n".$message;
+    $headers="From: ".$email;
+    if(mail($to, $subject, $message, $headers)){
+        echo "<h2>Email sent Successfully!" ." ".$name.",You'll be contacted shortly!</h1>";
+        
+        else{
+            echo "Message not sent!";
+        }
+    }
 }
-$to_email = 'mihlaligqasana"gmail.com';
-$subject = 'Testing PHP Mail'; 
-$message = 'The form is subbmitted';
-$headers = 'From :noreply @ company . com';
-mail($to_email,$subject,$message,$headers);
 ?>
