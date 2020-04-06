@@ -38,7 +38,7 @@ document.querySelector('.alert').style.display = 'block';
 //hide alert after 3 seconds
             setTimeout(function(){ 
 
-                 document.querySelector('.alert'). getElementByClassName.display ='none';
+                 document.querySelector('.alert'). getElementByClassName.display ="none";
 
             },3000);
 
@@ -76,4 +76,3 @@ document.querySelector('.alert').style.display = 'block';
 
   
             
- 

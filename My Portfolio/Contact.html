@@ -20,9 +20,8 @@
 <body>
 
 <!-- contact Form-->
-<div class="Container">
-  <div class="alert">message sent!</div>  
-<form action="email.php" id="Contact" method="POST">
+<div class="Container">  
+<form action="./email.php" name="Contact" id="Contact" method="post">
     <p>
         <label for="name">Full Name :</label>
             <input type="text" name="fullname" id="fullname" required=""/><br><br>
@@ -30,22 +29,22 @@
 
     <p>
         <label for="email">Email :</label>
-            <input type="email" name="email" id="email" required=""/><br><br>
+            <input type="email" name="email"  required=""/><br><br>
     </p>
 
     <p>
         <label for="phone">Phone Number :</label>
-            <input type="text" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone">
     </p>
 
     <p>
         <label for="message">Message :</label><br>
-            <textarea name="message" id="message" rows="6" required=""></textarea><br><br>
+            <textarea name="message"  rows="6" required=""></textarea><br><br>
     </p>
 
     <div class="g-recaptcha" data-sitekey="6LdjceQUAAAAAFNHBx3rjj0wWuvvdz5rYqPtzalj"> </div>
     <p>
-        <button type="submit" name="submit">Submit</button>
+        <input type="submit" name="submit" id="submit">
     </p>
 
 </form>
