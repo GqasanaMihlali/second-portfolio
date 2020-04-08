@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact page</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <!--page links-->
 <link rel="stylesheet" type="text/css" href="style.css">
+<script language="PHP">
+</script>
+
 
 <!--navigation-->
 <div class="navigation">
@@ -20,11 +22,13 @@
 <body>
 
 <!-- contact Form-->
-<div class="Container">  
-<form action="./email.php" name="Contact" id="Contact" method="post">
+
+<div class="Container"> 
+    
+<form action="mail.php" method="post" name="Contact" id="Contact" >
     <p>
         <label for="name">Full Name :</label>
-            <input type="text" name="fullname" id="fullname" required=""/><br><br>
+            <input type="text" name="name" required=""/><br><br>
     </p>
 
     <p>
@@ -34,7 +38,7 @@
 
     <p>
         <label for="phone">Phone Number :</label>
-            <input type="tel" name="phone" id="phone">
+            <input type="phone" name="phone" id="phone">
     </p>
 
     <p>
@@ -42,7 +46,6 @@
             <textarea name="message"  rows="6" required=""></textarea><br><br>
     </p>
 
-    <div class="g-recaptcha" data-sitekey="6LdjceQUAAAAAFNHBx3rjj0wWuvvdz5rYqPtzalj"> </div>
     <p>
         <input type="submit" name="submit" id="submit">
     </p>
