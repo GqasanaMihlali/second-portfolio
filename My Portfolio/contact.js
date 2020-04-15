@@ -62,3 +62,18 @@ document.getElementById('Contact').addEventListener('submit', submitForm);
 
           });
       }
+
+      import  {onMount} from 'contact.html';
+
+      onMount(() => {
+           const formElement = document.querySelector('Contact');
+           formElement.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const data = new URLSearchParams(new FormData(formElement));
+                fetch('https://getform.io/f/027992c5-8679-4622-9d07-7e8d12b3fbd0',{
+                    method: 'post',
+                    body: data 
+                });
+                alert ('Form Submitted Successfully!')
+           })
+      })
