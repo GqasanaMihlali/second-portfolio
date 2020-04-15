@@ -12,7 +12,7 @@ if(isset($_POST['submit'])) {
     $headers="From: ".$email;
 
     if(mail($to, $subject, $message, $headers)){
-        echo "<h2>Message Sent! Thank you"."".$name.",You will be contacted shortly!</h2>" ;
+        echo "<h2>Message Sent! Thank you"." ".$name.",You will be contacted shortly!</h2>" ;
     }
      else{
          echo "Message not Successfull!";
